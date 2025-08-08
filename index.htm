@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 토론</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="topic-title">토론 주제: 아침 식사, 꼭 챙겨 먹어야 할까?</h1>
+
+        <div class="options-container">
+            <div class="option-card" id="option-a">
+                <h2>주장 A</h2>
+                <p>건강한 하루의 시작을 위해 아침 식사는 필수적이다.</p>
+                <button id="vote-a-btn">A에 투표하기</button>
+            </div>
+            <div class="option-card" id="option-b">
+                <h2>주장 B</h2>
+                <p>아침을 거르는 것이 공복 시간 유지에 더 도움이 될 수 있다.</p>
+                <button id="vote-b-btn">B에 투표하기</button>
+            </div>
+        </div>
+
+        <div class="results-container">
+            <h2>실시간 투표 결과</h2>
+            <div class="progress-bar">
+                <div class="progress" id="progress-a">A: 0%</div>
+                <div class="progress" id="progress-b">B: 0%</div>
+            </div>
+            <p id="total-votes">총 투표 수: 0</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
